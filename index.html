@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminbuchen</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <div class="navbar">
+            <a href="index.html" class="active">Termin Buchung</a>
+            <a href="events.html">Events</a>
+            <a href="changeData.html">Änderung der Daten</a>
+        </div>
+
+        <main>
+            <h2>Record yourself</h2>
+        </main>
+
+        <div class="row">
+
+            <div class="sidenav">
+                <h4>Unsere Veranstaltungen</h4>
+            </div>
+
+            <div class="column">
+                <div id="recordForm">
+                    <form action="192.168.0.1" method="Post" id="register_form">
+                        <div style="display:inline-block">
+                            <select name="event" id="events">
+                            </select>
+                        </div>
+                        <br>
+                        <label for="fname">Vorname*</label>
+                        <input id="fname" type="text" required>
+
+                        <span>Nachname*</span>
+                        <input id="lname" type="text" required>
+
+                        <span>Geburtsdatum</span>
+                        <input id="dob" type="text" required>
+
+                        <span>Adresse Zeile 1*</span>
+                        <input id="straße" type="text" required>
+
+                        <span>PLZ*</span>
+                        <input id="plz" type="text" required>
+
+                        <span>Stadt*</span>
+                        <input id="stadt" type="text" required>
+
+                        <span>E-mail*</span>
+                        <input id="email" type="email" required>
+
+                        <span>Telefonnummer*</span>
+                        <input id="mobilenumber" type="text" required>
+
+                        <button " id='register'>Register</button>
+                    </form>
+                </div>
+                <div id="saveID "></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            <a class=" zur_th " href=" http://www.th-nuernberg.de/ "></a>
+        </p>
+        <p><a href=" http://www.hochschuljobboerse.de/ ">Hochschule Nürnberg</a></p>
+        <p>&copy; 2021 </p>
+    </footer>
+    <script src="main.js "></script>
+
+
+</body>
+
+
+</html>

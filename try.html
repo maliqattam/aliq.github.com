@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+        }
+        
+        #d1 {
+            position: fixed;
+            top: 10%;
+            background-color: greenyellow;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        #d2 {
+            background-color: pink;
+        }
+        
+        #d3 {
+            background-color: green;
+            position: relative;
+            left: 5%;
+        }
+        
+        ul li:nth-child(3),
+        ul li:nth-child(5),
+        ul li:nth-child(6) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">d1</div>
+    <div id="d2">d2</div>
+    <div id="d3">d3</div>
+
+    <script>
+        for (var i = 0; i < 20; i++) {
+            if (i % 2 == 0) {
+                document.write('<tr><td>' + i + '</td><td>' + (i * i) + '</tr>')
+            }
+        }
+    </script>
+    <br><br>
+
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <script>
+        var max = 5;
+        for (var i = 0; i < max; i++) {
+            document.write(i + "+" + i + "- (2 * " + i + ") == " + (i + i - (2 * i)) + "<br>");
+        }
+    </script>
+    <code>#d5 {color: red;}</code>
+    <div id="d5">
+        <h1>Hey</h1>
+        <p>Liebe Teilnehmer</p>
+        <h2>Weite Überschrift</h2>
+    </div>
+    <code>h2</code>
+    <ul>
+        <li>Sonntag</li>
+        <li>Monttag</li>
+        <li>Dienstag</li>
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+        <li>Samastag</li>
+    </ul>
+    <a href="javascript:alert('hello');">Hallo</a>
+    <script>
+        var str = "AliQattanAziz";
+        var index = str.length - 1;
+        for (var i = 2; index >= 0; i++) {
+            document.write(str[index]);
+            console.log(index);
+            index -= i;
+        }
+    </script>
+</body>
+
+</html>
